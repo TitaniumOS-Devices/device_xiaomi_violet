@@ -13,8 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common TitaniumOS stuff.
 $(call inherit-product, vendor/titanium/config/common_full_phone.mk)
+TITANIUM_BUILD_TYPE := OFFICIAL
 TARGET_INCLUDE_WIFI_EXT := true
 
 # Device identifier. This must come after all inclusions.
